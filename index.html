@@ -7,27 +7,45 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel = "stylesheet" href = "style.css" >
+  <!-- Google Font Link -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
 </head>
 
 <body>
-
   <header>
-    <h1>Fylo</h1>
-    <nav>
-      <ul>
-        <li>Features</li>
-        <li>Team</li>
-        <li>Sign In</li>
-      </ul>
+
+    <div class = "container">
+
+      <div class = "logo-container">
+        <img src = "images/logo.svg" alt = "logo" class = "logo">
+      </div>
+    
+      <nav>
+        <ul>
+          <li><a href ="#">Features</a></li>
+          <li><a href ="#">Team</a></li>
+          <li><a href ="#">Sign In</a></li>
+        </ul>
       </nav>
+
+    </div>
   </header>
 
 <main>
   <!-- First Section: Hero Section -->
-  <section>
-    <div>
+  <section class = "hero">
+
+    <div class = "img-container">
+      <img src = "images\illustration-1.svg" alt ="illustration of files" class = "img img-1">
+    </div>
+
+    <div class = "content" >
       <h2>
         All your files in one secure location, accessible anywhere.
       </h2>
@@ -38,18 +56,17 @@
       </p>
   
       <form action = "#">
-          <input type="email" id="email" placeholder="Enter Your Email" required>
-          <button type="submit">Get Started</button>
+          <input type="email" id="email" placeholder="Enter your email ..." >
+          <button type="submit" >Get Started</button>
       </form>
+
     </div>
 
-    <div>
-      <img src = "" alt = "Animated work people">
-    </div>
   </section>
 
 <!-- Second Section: Feature Information -->
   <section>
+  
     <div>
       <h2> Stay productive, wherever you are</h2>
       <p> Never let location be an issue when accessing your files. Fylo has you 
@@ -81,7 +98,7 @@
       <img src = "" alt = "Animated work people">
     </div>
     
-
+ 
   </section>
     
 <!-- Third Section: Early Access -->
@@ -94,8 +111,8 @@
     </div>
     
     <form action = "#">
-      <label><input type = "email" placeholder = "Enter Your Email"></label>
-      <button type = "submit">Get Started For Free</button>
+      <input type = "email"  placeholder = "Enter your email...">
+      <button type = "submit" >Get Started For Free</button>
     </form>
     
   </section>

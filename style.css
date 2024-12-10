@@ -1,4 +1,187 @@
+/*
+GENERAL STYLE
+*/
+
+:root {
+    --primary-dark-blue: hsl(243, 87%, 12%);
+    --primary-desaturated-blue: hsl(238, 22%, 44%);
+    --accent-bright-blue: hsl(224, 93%, 58%);
+    --accent-moderate-cyan: hsl(170, 45%, 43%);
+    --neutral-light-gray-blue: hsl(240, 75%, 98%);
+    --neutral-light-gray: hsl(0, 0%, 75%);
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400; 
+}
+
+body p{
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, nav, a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400, 700;
+}
+
+/*======================
+HEADER
+========================*/
+.container {
+    width: 90%;
+    display: flex;
+    margin: 2em auto;
+    justify-content: space-between;
+}
+
+.logo-container{
+    display: flex;
+    width: 30%;
+}
+
+.logo-container img{ 
+    justify-items: center;
+    max-width: 100%;
+    margin: auto 0 ;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 2rem;
+}
+
+nav ul li{
+    align-content: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--primary-desaturated-blue); 
+    margin-right: 0.5rem;   
+}
+
+
+/*=======================
+MAIN CONTENT
+=========================*/
+main, section .img-container {
+    width: 85%;
+    margin: 2em auto;
+}
+
+section{
+    margin: 2rem 0;
+
+}
+
+.img {
+    width: 100%;
+}
+
+.hero h2{
+    line-height: 2rem;
+    text-align: center;
+    color: var(--primary-dark-blue); 
+}
+
+.hero p{
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+}
+
+input[type = "email"]{
+    border: 1px solid var(--neutral-light-gray);
+    height: 50px;
+    padding: 0 16px;
+    border-radius: 0.5rem;
+}
+
+button[type = "submit"]{
+    padding: 10px;
+    color: white;
+    border: 0;
+    background-color: var(--accent-bright-blue);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+button[type = "submit"]:hover, button[type = "submit"]:active{
+    box-shadow: 0 0 20px grey;
+    transform: scale(0.9);
+}
+
+@media (width > 375px ){
+    section{
+        height: 80vh;
+    }
+    nav ul {
+        list-style: none;
+        width: 20rem;
+        justify-content: space-around;
+        display: flex;
+        padding-left: 2rem;
+    }
+
+    .hero {
+
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        column-gap: 3rem; 
+    }
+
+    .hero .img-container{
+        width: 50%;
+        height: 80%;
+        order: 1;
+    }
+
+    .hero div:nth-child(2){
+        width: 50%;
+        height: 70%;
+        top: 0;
+    }
+
+    .hero h2{ 
+        text-align: left;
+        line-height: 2.5rem;
+    }
+
+    .hero p {
+        text-align: left;
+        line-height: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        width: 100%;
+    }
+
+    input[type = "email"]{
+        flex: 2 1 0;
+    }
+    
+    button[type = "submit"]{
+        flex: 1 2 0;
+    }
+
+
 }
