@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
 </head>
@@ -20,9 +21,7 @@
 <body>
   <header>
 
-    <div class = "container">
-
-      <div class = "logo-container">
+      <div>
         <img src = "images/logo.svg" alt = "logo" class = "logo">
       </div>
     
@@ -34,120 +33,161 @@
         </ul>
       </nav>
 
-    </div>
   </header>
 
-<main>
   <!-- First Section: Hero Section -->
   <section class = "hero">
 
-    <div class = "img-container">
-      <img src = "images\illustration-1.svg" alt ="illustration of files" class = "img img-1">
-    </div>
-
-    <div class = "content" >
-      <h2>
-        All your files in one secure location, accessible anywhere.
-      </h2>
-      <p>
-        Fylo stores your most important files in one secure location. 
-        Access them wherever you need, share and collaborate with friends, 
-        family, and co-workers.
-      </p>
+    <article class = "two-col-layout">
+      <div class = "img-container">
+        <img src = "images\illustration-1.svg" alt ="illustration of files" class = "img img-1">
+      </div>
   
-      <form action = "#">
-          <input type="email" id="email" placeholder="Enter your email ..." >
-          <button type="submit" >Get Started</button>
-      </form>
+      <div class = "content" >
+        <h2>
+          All your files in one secure location, accessible anywhere.
+        </h2>
+        <p>
+          Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.
+        </p>
+    
+        <form action = "#">
+            <input type="email" id="email" placeholder="Enter your email ..." >
+            <button type="submit" class="btn" >Get Started</button>
+        </form>
+      </div>
 
-    </div>
+    </article>
+
+    
 
   </section>
-
-<!-- Second Section: Feature Information -->
-  <section>
   
-    <div>
-      <h2> Stay productive, wherever you are</h2>
-      <p> Never let location be an issue when accessing your files. Fylo has you 
-        covered for all of your file storage needs.
-      
-        Securely share files and folders with friends, family and colleagues for 
-        live collaboration. No email attachments required!
-      
-        <a href = '#'>See how Fylo works</a>
-      </p>
-  
-      <article>
-          <blockquote>
-            <p>
-              Fylo has improved our team productivity by an order of magnitude. Since 
-            making the switch our team has become a well-oiled collaboration machine.
-            </p>
-          </blockquote>
-          
-          <footer>
-            <img src = "" alt = "Image of CEO of Fylo">
-            <h3>Kyle Burton</h3>
-            <p>Founder & CEO, Huddle</p>
-          </footer>
-      </article>
-    </div>
+  <picture>
+    <source
+     media = "(min-width: 768px)"
+     srcset = "images\bg-curve-desktop.svg"
+    /> 
+    <img src = "images\bg-curve-mobile.svg" alt = ""class = "svg-img" />
+   </picture>
 
-    <div>
-      <img src = "" alt = "Animated work people">
-    </div>
+    <!-- Second Section: Feature Information -->
+  <section class = "second-section">
+
+
+    <article class = "two-col-layout">
+      
+      <div class = "img-container">
+        
+        <img src = "images\illustration-2.svg" class = "img" alt = "Animated work people">
+      </div>
+  
+      <div class = "content">
+        <h2> Stay productive, wherever you are</h2>
+        <p> Never let location be an issue when accessing your files. Fylo has you 
+          covered for all of your file storage needs.
+        <p>
+        <p>
+          Securely share files and folders with friends, family and colleagues for 
+          live collaboration. No email attachments required!
+        </p>
+  
+        <a href = '#' class = "link">See how Fylo works<img src = "images/icon-arrow.svg" alt=""></a>
     
- 
+       
+          <div class = "card">
+            <blockquote>
+              <img src = "images\icon-quotes.svg" alt = "">
+              <p>
+                Fylo has improved our team productivity by an order of magnitude. Since 
+              making the switch our team has become a well-oiled collaboration machine.
+              </p>
+
+              <aside>
+                <div class="aside_content">
+                  <img src = "images\avatar-testimonial.jpg" alt = "Image of CEO of Fylo" class = "img-3">
+                  <ul>
+                    <li>Kyle Burton</li>
+                    <li>Founder & CEO, Huddle</li>
+                  </ul>
+  
+                </div>
+                
+              </aside>
+            </blockquote>
+  
+          </div>
+  
+
+    </article>
+    </div>
   </section>
     
 <!-- Third Section: Early Access -->
-  <section>
-    <div>
-      <h2>Get early access today</h2>
-      <p> It only takes a minute to sign up and our free starter tier is extremely generous. 
-        If you have any questions, our support team would be happy to help you.
-      </p>
-    </div>
-    
-    <form action = "#">
-      <input type = "email"  placeholder = "Enter your email...">
-      <button type = "submit" >Get Started For Free</button>
-    </form>
-    
+  <section class = "cta">
+    <article class = "two-col-layout">
+      <article>
+      
+        <h2>Get early access today</h2>
+        <p> It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      
+      </article>
+     
+      <form action = "#" class = "cta form">
+        <input type = "email" name = "Email" id = "email" placeholder = "Enter your email...">
+        <button type = "submit" class="btn">Get Started For Free</button>
+      </form>
+
+    </article>
   </section>
 
-</main>
-  
 
   <footer>
-    <h3>Fylo</h3>
     <div>
-      
-      <p>Phone: +1-543-123-4567</p>
-      <p>example@fylo.com</p>
+      <article>
+        <img src = "images\logo.svg" alt="">
+      </article>
+
     </div>
 
     <div>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Press</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-    </div>
+      <article>
+        <ul>
+          <li><img src="images/icon-phone.svg" alt="">Phone: +1-543-123-4567 </li>
+          <li><img src="images/icon-email.svg" alt="">example@fylo.com</li>
+        </ul>
+      </article>
 
-    <div>
-      <ul>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-    </div>
-    <div>
-      <img src = "" alt = "Facebook icon">
-      <img src = "" alt = "Snapchat icon">
-      <img src = "" alt = "Instagram icon">
+      <article>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+
+      </article>
+
+      <article>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </article>
+
+      <article>
+        <ul>
+          <li><i class="fab fa-facebook"></li>
+          <li><i class="fab fa-twitter"></li>
+          <li><i class="fab fa-snapchat"></li>
+        </ul>
+      </article>
+
     </div>
 
     <p class="attribution">
