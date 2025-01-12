@@ -260,7 +260,7 @@ footer{
     margin: 0;
 }
 
-@media (width > 425px ){
+@media (width > 760px ){
     
     nav ul {
         list-style: none;
