@@ -31,10 +31,8 @@ h1, h2 {
 }
 
 section{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 6rem;
-    padding-top: 2rem;
+    padding: 3rem;
+
 }
 
 .link{
@@ -45,8 +43,10 @@ section{
 .cta{
     background-color:var(--primary-desaturated-blue);
 }
+
 footer{
     background-color: var(--primary-dark-blue);
+    color: white;
 }
 /*======================
 HEADER
@@ -163,6 +163,11 @@ SECOND SECTION
     display: block;
     vertical-align: bottom;
 }
+
+.second-section .two-col-layout .img{
+    width: 80%;
+    padding: 4rem;
+}
 /*=======================
 CARD COMPONENT
 =========================*/
@@ -171,8 +176,6 @@ CARD COMPONENT
     background-color: white;
     margin-top: 2rem;
     box-shadow: 1px 1px 1px ;
-    padding: 0.5rem;
-
 }
 
 blockquote{
@@ -212,24 +215,51 @@ THIRD SECTION
     color: white;
 }
 
-.cta .two-col-layout{
-    grid-template-columns: 40% 60%;
+footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.logo-col{
+    padding: 2rem;
+}
+
+
+.row .col-1 ul li{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.row .col ul{
+    color:white;
+    list-style-type: none; 
+}
+
+.row .col ul li a{
+    color: white;
+    text-decoration: none;  
+}
+
+.row .col ul li{
+    margin-bottom: 1rem;
+}
+
+.row .col{
+    margin-top: 2rem;
+}
+
+.row .col:nth-of-type(4n) ul{
+    display: flex;
+    padding: 0;
     gap: 1rem;
-
+    justify-content: center;
 }
 
-.cta form{
-    display: grid;
-    padding-left: 15rem;
+.attribution{
+    margin: 0;
 }
 
-.cta form button{
-   width: 15rem;
-}
-
-.cta form input{
-    width: 20rem;
- }
 @media (width > 425px ){
     
     nav ul {
@@ -279,6 +309,7 @@ THIRD SECTION
     button[type = "submit"]{
         flex: 1 2 0;
     }
+
     h2 {
         line-height: 1.5;
     }
@@ -288,7 +319,63 @@ THIRD SECTION
         margin-bottom: 2rem;
     }
 
+    .cta form{
+        display: grid;
+        padding: 3rem;
+    }
 
+    .cta form input{
+        width: 80%;
+    }
 
+    .cta form button{
+        width: 70%;
+    }
+
+    footer{
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .logo-col{
+        padding: 2rem;
+    }
+
+    .row{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .row .col-1 ul li{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .row .col ul{
+        color:white;
+        list-style-type: none; 
+    }
+
+    .row .col ul li a{
+        color: white;
+        text-decoration: none;  
+    }
+
+    .row .col ul li{
+        margin-bottom: 1rem;
+    }
+
+    .row .col:nth-of-type(4n) ul{
+        display: flex;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .attribution{
+        margin: 0;
+    }
 
 }
